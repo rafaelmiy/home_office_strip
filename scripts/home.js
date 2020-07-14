@@ -14,7 +14,7 @@ var config = {
     projectId: "home-office-strip",
     storageBucket: "home-office-strip.appspot.com",
     messagingSenderId: "252635280677",
-    appId: "1:252635280677:web:ff4f4d9b990ae838bad6cc"
+    appId: "1:252635280677:web:bb4bde536bc50447bad6cc"
 };
 
 //initialize your firebase
