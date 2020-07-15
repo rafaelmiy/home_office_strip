@@ -64,33 +64,39 @@ body {
 @keyframes blink {
   78% {
     color: inherit;
+    -webkit-text-fill-color: inherit;
     text-shadow: inherit;
   }
   79%{
     color: var(--color-off);
+    -webkit-text-fill-color: var(--color-off);
   }
   80% {
-    
     text-shadow: none;
   }
   81% {
     color: inherit;
+    -webkit-text-fill-color: inherit;
     text-shadow: inherit;
   }
   82% {
     color: var(--color-off);
+    -webkit-text-fill-color: var(--color-off);
     text-shadow: none;
   }
   83% {
     color: inherit;
+    -webkit-text-fill-color: inherit;
     text-shadow: inherit;
   }
   92% {
     color: var(--color-off);
+    -webkit-text-fill-color: var(--color-off);
     text-shadow: none;
   }
   92.5% {
     color: inherit;
+    -webkit-text-fill-color: inherit;
     text-shadow: inherit;
   }
 }
