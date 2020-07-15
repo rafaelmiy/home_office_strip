@@ -2,7 +2,6 @@
     font-family: 'Vibur';
     font-style: normal;
     font-weight: 400;
-    src: local('Vibur'), url(font/Vibur.woff2) format('woff2');
     src: url('Vibur.eot'); /* IE9 Compat Modes */
     src: url('Vibur.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
        url('Vibur.woff2') format('woff2'), /* Super Modern Browsers */
