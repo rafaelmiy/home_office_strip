@@ -46,7 +46,7 @@ body {
   /* animation: blink linear infinite 2s; */
 }
 .logo #c2{
-  /* animation: blink linear infinite 3s; */
+  animation: blink linear infinite 3s;
 }
 .logo b.meeting{
     color: var(--color-meeting);
