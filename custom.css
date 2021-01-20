@@ -43,10 +43,13 @@ body {
 }
 .logo #c2,
 .logo #c4{
-  animation: blink linear infinite 2s;
+    /* animação desativada temporariamente pq não funciona no iOS */
+  /* animation: blink linear infinite 2s; */
+  
 }
 .logo #c2{
-  animation: blink linear infinite 3s;
+    /* animação desativada temporariamente pq não funciona no iOS */
+  /* animation: blink linear infinite 3s; */
 }
 .logo b.meeting{
     color: var(--color-meeting);
@@ -65,40 +68,40 @@ body {
 
 @keyframes blink {
   78% {
-    /* color: inherit; */
+    color: inherit;
     -webkit-text-fill-color: inherit;
     text-shadow: inherit;
-    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em, 0 0 0.5em, 0 0 0.1em, 0 10px 3px #000;
+    /* iOS não consegue entender o text shadow */
   }
   79%{
-    /* color: var(--color-off); */
+    color: var(--color-off);
     -webkit-text-fill-color: var(--color-off);
   }
   80% {
     text-shadow: none;
   }
   81% {
-    /* color: inherit; */
+    color: inherit;
     -webkit-text-fill-color: inherit;
     text-shadow: inherit;
   }
   82% {
-    /* color: var(--color-off); */
+    color: var(--color-off);
     -webkit-text-fill-color: var(--color-off);
     text-shadow: none;
   }
   83% {
-    /* color: inherit; */
+    color: inherit;
     -webkit-text-fill-color: inherit;
     text-shadow: inherit;
   }
   92% {
-    /* color: var(--color-off); */
+    color: var(--color-off);
     -webkit-text-fill-color: var(--color-off);
     text-shadow: none;
   }
   92.5% {
-    /* color: inherit; */
+    color: inherit;
     -webkit-text-fill-color: inherit;
     text-shadow: inherit;
   }
