@@ -43,12 +43,10 @@ body {
 }
 .logo #c2,
 .logo #c4{
-  /* animation: blink linear infinite 2s; */
-  -webkit-appearance: none;
+  animation: blink linear infinite 2s;
 }
 .logo #c2:nth-of-type(2){
-  /* animation: blink linear infinite 3s; */
-  -webkit-appearance: none;
+  animation: blink linear infinite 3s;
 }
 .logo b.meeting{
     color: var(--color-meeting);
@@ -70,46 +68,38 @@ body {
     color: inherit;
     -webkit-text-fill-color: inherit;
     text-shadow: inherit;
-    -webkit-appearance: none;
   }
   79%{
     color: var(--color-off);
     -webkit-text-fill-color: var(--color-off);
-    -webkit-appearance: none;
   }
   80% {
     text-shadow: none;
-    -webkit-appearance: none;
   }
   81% {
     color: inherit;
     -webkit-text-fill-color: inherit;
     text-shadow: inherit;
-    -webkit-appearance: none;
   }
   82% {
     color: var(--color-off);
     -webkit-text-fill-color: var(--color-off);
     text-shadow: none;
-    -webkit-appearance: none;
   }
   83% {
     color: inherit;
     -webkit-text-fill-color: inherit;
     text-shadow: inherit;
-    -webkit-appearance: none;
   }
   92% {
     color: var(--color-off);
     -webkit-text-fill-color: var(--color-off);
     text-shadow: none;
-    -webkit-appearance: none;
   }
   92.5% {
     color: inherit;
     -webkit-text-fill-color: inherit;
     text-shadow: inherit;
-    -webkit-appearance: none;
   }
 }
 
