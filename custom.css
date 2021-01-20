@@ -71,7 +71,6 @@ body {
     color: inherit;
     -webkit-text-fill-color: inherit;
     text-shadow: inherit;
-    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em , 0 0 0.5em , 0 0 0.1em , 0 10px 3px;
     /* iOS não consegue entender o text shadow */
   }
   79%{
@@ -85,7 +84,6 @@ body {
     color: inherit;
     -webkit-text-fill-color: inherit;
     text-shadow: inherit;
-    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em , 0 0 0.5em , 0 0 0.1em , 0 10px 3px;
   }
   82% {
     color: var(--color-off);
@@ -96,7 +94,6 @@ body {
     color: inherit;
     -webkit-text-fill-color: inherit;
     text-shadow: inherit;
-    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em , 0 0 0.5em , 0 0 0.1em , 0 10px 3px;
   }
   92% {
     color: var(--color-off);
@@ -107,7 +104,6 @@ body {
     color: inherit;
     -webkit-text-fill-color: inherit;
     text-shadow: inherit;
-    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em , 0 0 0.5em , 0 0 0.1em , 0 10px 3px;
   }
 }
 
