@@ -44,9 +44,11 @@ body {
 .logo #c2,
 .logo #c4{
   animation: blink linear infinite 2s;
+  -webkit-appearance: none;
 }
 .logo #c2:nth-of-type(2){
   animation: blink linear infinite 3s;
+  -webkit-appearance: none;
 }
 .logo b.meeting{
     color: var(--color-meeting);
