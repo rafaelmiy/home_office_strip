@@ -70,38 +70,46 @@ body {
     color: inherit;
     -webkit-text-fill-color: inherit;
     text-shadow: inherit;
+    -webkit-appearance: none;
   }
   79%{
     color: var(--color-off);
     -webkit-text-fill-color: var(--color-off);
+    -webkit-appearance: none;
   }
   80% {
     text-shadow: none;
+    -webkit-appearance: none;
   }
   81% {
     color: inherit;
     -webkit-text-fill-color: inherit;
     text-shadow: inherit;
+    -webkit-appearance: none;
   }
   82% {
     color: var(--color-off);
     -webkit-text-fill-color: var(--color-off);
     text-shadow: none;
+    -webkit-appearance: none;
   }
   83% {
     color: inherit;
     -webkit-text-fill-color: inherit;
     text-shadow: inherit;
+    -webkit-appearance: none;
   }
   92% {
     color: var(--color-off);
     -webkit-text-fill-color: var(--color-off);
     text-shadow: none;
+    -webkit-appearance: none;
   }
   92.5% {
     color: inherit;
     -webkit-text-fill-color: inherit;
     text-shadow: inherit;
+    -webkit-appearance: none;
   }
 }
 
