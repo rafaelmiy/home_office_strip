@@ -43,10 +43,10 @@ body {
 }
 .logo #c2,
 .logo #c4{
-  animation: blink linear infinite 2s;
+  /* animation: blink linear infinite 2s; */
 }
-.logo #c2:nth-of-type(2){
-  animation: blink linear infinite 3s;
+.logo #c2{
+  /* animation: blink linear infinite 3s; */
 }
 .logo b.meeting{
     color: var(--color-meeting);
