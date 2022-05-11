@@ -38,7 +38,7 @@ var firebaseStats = database.ref();
 
 function submitStats(a) {
 
-    var firebaseStats = database.ref().set({
+    var firebaseStats = database.ref().update({
         stats: a
     });
 
