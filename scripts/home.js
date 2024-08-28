@@ -23,26 +23,45 @@ firebase.initializeApp(config);
 var email = u+"@gmail.com";
 var password = p;
 
-firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
-    // Handle Errors here.
+firebase.auth().signInWithEmailAndPassword(email, password).then(user =>{
+    // alert("Login Successful :)");
+}).catch(err => {
+    alert(err.message);
     var errorCode = error.code;
     var errorMessage = error.message;
-    // ...
+
+    console.log('Erro código: '+errorCode);
+    console.log('Erro: '+errorMessage);
 });
 
 var database = firebase.database();
 
 //create a variable to hold our orders list from firebase
 var firebaseStats = database.ref();
-// console.log(firebaseStats);
+console.log(firebaseStats);
 
 function submitStats(a) {
 
-    var firebaseStats = database.ref().update({
+    database.ref().update({
         stats: a
     });
 
 };
+
+function updateNeon(text){
+    text = text.replace(/\s/g, '');
+    var textSize = text.length;
+    var caracterRange = textSize/5;
+    var actualPoint = 0, eachPart = caracterRange;
+    for(var i = 0 ; i < 5 ; i++){
+        var part = text.substring(actualPoint, eachPart);
+        // console.log(caracterRange);
+        // console.log(part);
+        actualPoint = eachPart;
+        eachPart += caracterRange;
+        $('#c'+(i+1)).html(part);
+    }
+}
 
 firebaseStats.on('value',function(stats){
     var stats = stats.val();
@@ -86,18 +105,3 @@ firebaseStats.on('value',function(stats){
     $('#logo b').removeClass().addClass(statsNameClass);
     updateNeon(statsName);
 });
-
-function updateNeon(text){
-    text = text.replace(/\s/g, '');
-    var textSize = text.length;
-    var caracterRange = textSize/5;
-    var actualPoint = 0, eachPart = caracterRange;
-    for(var i = 0 ; i < 5 ; i++){
-        var part = text.substring(actualPoint, eachPart);
-        // console.log(caracterRange);
-        // console.log(part);
-        actualPoint = eachPart;
-        eachPart += caracterRange;
-        $('#c'+(i+1)).html(part);
-    }
-}
